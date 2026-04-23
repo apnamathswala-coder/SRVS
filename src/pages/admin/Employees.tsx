@@ -142,7 +142,7 @@ export default function AdminEmployees() {
     setAccessSaving(true);
     setAccessError(null);
     try {
-      const res = await fetch(`/api/employees/${accessTarget.id}/permissions`, {
+      const res = await fetch(`https://ca-backend-8w90.onrender.com/api/employees/${accessTarget.id}/permissions`, {
         method: "PUT",
         credentials: "include",
         headers: { "Content-Type": "application/json" },
