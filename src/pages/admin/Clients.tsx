@@ -313,7 +313,7 @@ export default function AdminClients() {
         setImportMsg("No valid rows found in the CSV.");
         return;
       }
-      const res = await fetch("/api/clients/import", {
+      const res = awaitfetch("https://ca-backend-8w90.onrender.com/api/clients/import", {
         method: "POST",
         credentials: "include",
         headers: { "Content-Type": "application/json" },
